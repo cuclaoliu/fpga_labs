@@ -5,3 +5,9 @@
 */*_sim/
 */nios_core/
 */.qsys_edit/
+*/software/RemoteSystemsTempFiles/
+*/software/.metadata/
+*/software/*_bsp/
+*/software/*/obj/
+*/software/*/*.elf
+*/software/*/*.objdump
