@@ -18,13 +18,13 @@
 #
 # Quartus Prime
 # Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-# Date created = 18:55:02  May 23, 2021
+# Date created = 11:44:58  July 08, 2021
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "18.1"
-DATE = "18:55:02  May 23, 2021"
+DATE = "11:44:58  July 08, 2021"
 
 # Revisions
 
-PROJECT_REVISION = "MyFirstFPGA"
+PROJECT_REVISION = "pwd_led"
