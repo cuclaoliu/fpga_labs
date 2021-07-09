@@ -1,18 +1,19 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity pwm_core is
 	port(
 		clk			:	IN		std_logic;
 		rst			:	IN		std_logic;
-		period		:	IN		integer;		--pwm step value
-		duty		:	IN		integer;		--duty value
+		period		:	IN		unsigned(31 downto 0);		--pwm step value
+		duty		:	IN		unsigned(31 downto 0);		--duty value
 		pwm_out		:	OUT		std_logic				--pwm output
 	);
 end entity;
 
 architecture rtl of pwm_core is
-	signal period_cnt		:	integer;
+	signal period_cnt		:	unsigned(31 downto 0);
 	signal		pwm_r		:	std_logic;
 begin
 
@@ -22,7 +23,7 @@ begin
 	process(clk, rst)
 	begin
 		if rst='1' then
-			period_cnt <= 0;
+			period_cnt <= (others=>'0');
 		elsif rising_edge(clk) then
 			period_cnt <= period_cnt + period;
 		end if;
