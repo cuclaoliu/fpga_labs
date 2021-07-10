@@ -82,7 +82,7 @@ begin
 					state <= PWM_GAP ;
 					timer <= (others=>'0');
 				when PWM_GAP =>
-					if timer >= to_unsigned(US_COUNT*100, 32) then					--adjustment gap is 100us
+					if timer >= to_unsigned(US_COUNT*200, 32) then					--adjustment gap is 100us
 						if pwm_flag='1' then
 							state <= PWM_MINUS;
 						else
