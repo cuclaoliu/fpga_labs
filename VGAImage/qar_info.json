@@ -1,0 +1,7 @@
+{
+	"common_dir" : "/home/laoliu/repo/fpga_labs/VGAColorBar/",
+	"acds_version" : "Version 18.1.0",
+	"platform" : "linux",
+	"os" : "Arch Linux",
+	"qpf" : "VGAColorBar.qpf"
+}
